@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.googultaxi.taxiuser.GetDetails.UserDetails">
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="150dp"
+    android:background="@drawable/logo"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="150dp"/>
+<TextView
+    android:id="@+id/text"
+    android:layout_below="@id/logo"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="10dp"
+    android:fontFamily="@font/medium"
+    android:textSize="20dp"
+    android:text="Enter the username.\nThis will be your userid.\nIt must contains one number and alphabet with minimum 6 characters."
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/userdetais"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/text"
+        android:hint="Enter the username"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#1A1A1A"
+        android:background="@drawable/circular_edittext"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:textSize="18dp"
+
+        android:textColor="#ffffff"
+        android:fontFamily="@font/semi_bold"
+        android:backgroundTint="#35A853"
+        android:background="@drawable/rounded_circular_button"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

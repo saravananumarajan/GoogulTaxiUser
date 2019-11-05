@@ -1,0 +1,107 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_sheet"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_hideable="true"
+        >
+
+    <FrameLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/medium"
+                android:id="@+id/select_vehicle"
+                android:text="Select the vehicle"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/mini"
+                android:layout_below="@id/select_vehicle"
+                android:background="@drawable/car1"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <ImageView
+                android:id="@+id/sedan"
+                android:layout_below="@id/select_vehicle"
+                android:background="@drawable/car2"
+                android:layout_toRightOf="@id/mini"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <ImageView
+                android:id="@+id/hatchback"
+                android:layout_below="@id/select_vehicle"
+                android:background="@drawable/car3"
+                android:layout_toRightOf="@id/sedan"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <ImageView
+                android:id="@+id/suv"
+                android:layout_below="@id/select_vehicle"
+                android:background="@drawable/car4"
+                android:layout_toRightOf="@id/hatchback"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <Button
+                android:id="@+id/submit"
+                android:text="Submit"
+                android:backgroundTint="#35A853"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:fontFamily="@font/semi_bold"
+                android:background="@drawable/rounded_circular_button"
+                android:layout_below="@id/sedan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

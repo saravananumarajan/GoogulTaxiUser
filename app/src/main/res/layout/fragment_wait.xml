@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.googultaxi.taxiuser.NavigationActivity.ui.slideshow.WaitFragment">
+
+
+  <TextView
+      android:id="@+id/wait"
+      android:fontFamily="@font/semi_bold"
+      android:textSize="20dp"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:text="please Wait we are getting taxi for you"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

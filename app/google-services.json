@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "158076606890",
+    "firebase_url": "https://googulttaxiuser.firebaseio.com",
+    "project_id": "googulttaxiuser",
+    "storage_bucket": "googulttaxiuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158076606890:android:87782a0df2d594f4ac73d3",
+        "android_client_info": {
+          "package_name": "com.googultaxi.googultaxiuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158076606890-rmvt0i2quldjn72d44hifmda8vlsile0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.googultaxi.googultaxiuser",
+            "certificate_hash": "a9aad68cccf89bb5433a96ddef72eeffeb31355d"
+          }
+        },
+        {
+          "client_id": "158076606890-3uffkg45v7qpndkl5nchovo6ek1vsukl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvAf4Gd4ot1Gj5SbOpI5f_oscMg1hFHyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158076606890-3uffkg45v7qpndkl5nchovo6ek1vsukl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logo"
+        android:background="@drawable/logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_height="140dp" />
+<ImageButton
+    android:id="@+id/help"
+    android:background="@drawable/help"
+    android:layout_width="40dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tamiltext"
+        android:text="@string/tamil"
+        android:layout_below="@id/logo"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/userid"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="Enter User Id"
+        android:layout_below="@+id/tamiltext"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circular_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginRight="100dp"
+        android:textAlignment="center"
+        android:layout_height="40dp" />
+
+    <EditText
+    android:id="@+id/routeno"
+    android:singleLine="true"
+    android:inputType="number"
+    android:hint="Enter the tracking number"
+    android:layout_below="@+id/userid"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circular_edittext"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+        android:layout_marginRight="100dp"
+    android:textAlignment="center"
+    android:layout_height="40dp" />
+   <Button
+       android:id="@+id/trackbt"
+       android:layout_below="@+id/routeno"
+       android:layout_marginTop="40dp"
+       android:text="Start Tracking"
+       android:layout_marginRight="100dp"
+       android:background="@drawable/button_background"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="40dp" />
+    </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>

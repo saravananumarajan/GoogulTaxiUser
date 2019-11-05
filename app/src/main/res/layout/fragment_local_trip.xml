@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.googultaxi.taxiuser.NavigationActivity.ui.trip.LocalTrip">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.googultaxi.taxiuser.NavigationActivity.ui.trip.LocalTrip">
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+    <FrameLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+<EditText
+    android:id="@+id/pickup"
+    android:hint="Enter pickup point"
+    android:textAlignment="center"
+    android:singleLine="true"
+    android:fontFamily="@font/semi_bold"
+    android:textColorHint="#1A1A1A"
+    android:textSize="15dp"
+    android:background="@drawable/circular_edittext_map"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"/>
+        <ImageView
+            android:background="@drawable/circle"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#35A853"
+        android:layout_gravity="center_vertical"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/drop"
+            android:hint="Enter dropping point"
+            android:textAlignment="center"
+            android:fontFamily="@font/semi_bold"
+            android:textColorHint="#1A1A1A"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:background="@drawable/circular_edittext_map"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <ImageView
+
+            android:background="@drawable/circle"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#cf1020"
+            android:layout_gravity="center_vertical"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+    </FrameLayout>
+
+</FrameLayout>
+    <include
+        layout="@layout/bottom_sheet"/>
+
+</RelativeLayout>

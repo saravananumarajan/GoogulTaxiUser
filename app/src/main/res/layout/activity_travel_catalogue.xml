@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help.TravelCatalogue">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+    android:id="@+id/image1"
+        android:background="@drawable/image3"
+    android:layout_width="match_parent"
+    android:layout_height="280dp" />
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_below="@+id/image1"
+android:background="@drawable/image4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_below="@id/image2"
+        android:background="@drawable/image2"
+        android:layout_width="match_parent"
+        android:layout_height="550dp" />
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

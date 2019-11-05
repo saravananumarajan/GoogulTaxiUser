@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.profile.HomeFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/trip"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.bookings.GalleryFragment"
+        android:label="@string/Trip"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/bookings"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.slideshow.SlideshowFragment"
+        android:label="@string/Bookings"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/track_another_trip"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.tools.ToolsFragment"
+        android:label="@string/Track_another_trip"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/remarks"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.share.ShareFragment"
+        android:label="@string/Remarks"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/about_us"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.send.SendFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/local_trip"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.trip.LocalTrip"
+        android:label="@string/local_trip"
+        tools:layout="@layout/fragment_local_trip" />
+    <fragment
+        android:id="@+id/wait"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.slideshow.WaitFragment"
+        android:label="Wait"
+        tools:layout="@layout/fragment_wait" />
+    <fragment
+        android:id="@+id/long_trip"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.trip.LongTrip"
+        android:label="Longtrip"
+        tools:layout="@layout/fragment_long_trip" />
+
+</navigation>
