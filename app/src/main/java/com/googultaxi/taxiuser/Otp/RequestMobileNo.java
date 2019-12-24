@@ -23,6 +23,17 @@ import java.util.Random;
 public class RequestMobileNo extends AppCompatActivity {
 EditText mobile_no;
 Button submit;
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +45,7 @@ Button submit;
         @Override
         public void onClick(View v) {
             Intent intent=new Intent(RequestMobileNo.this,OtpActivity.class);
-            intent.putExtra("mobile_no",mobile_no.getText().toString());
+            intent.putExtra("mobile_no","+91"+mobile_no.getText().toString());
             startActivity(intent);
         }
     });

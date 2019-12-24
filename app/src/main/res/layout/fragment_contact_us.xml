@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.googultaxi.taxiuser.NavigationActivity.ui.ContactUs">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+
+        android:backgroundTint="#1A1A1A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/company_name"
+            android:textColor="#ffffff"
+            android:text="Googul Taxi"
+            android:textSize="20dp"
+            android:fontFamily="@font/medium"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/email"
+                android:layout_below="@id/company_name"
+                android:textColor="#ffffff"
+                android:text="Email id  :  googultaxi@gmail.com"
+                android:textSize="15dp"
+                android:fontFamily="@font/medium"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/mobile_no"
+                android:layout_below="@id/email"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:text="Mobile no  :  8754875876"
+                android:textSize="15dp"
+                android:fontFamily="@font/medium"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/website"
+                android:layout_below="@id/mobile_no"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:text="visit us  :  www.googultaxi.com"
+                android:textSize="15dp"
+                android:fontFamily="@font/medium"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

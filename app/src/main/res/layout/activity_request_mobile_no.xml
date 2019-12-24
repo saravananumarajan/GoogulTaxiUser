@@ -7,11 +7,11 @@
     tools:context="com.googultaxi.taxiuser.Otp.RequestMobileNo">
 <ImageView
     android:id="@+id/logo"
-    android:background="@drawable/logo"
+    android:background="@drawable/logoicon"
     android:layout_marginTop="100dp"
     android:layout_centerHorizontal="true"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
 />
     <EditText
         android:id="@+id/mobile_no"

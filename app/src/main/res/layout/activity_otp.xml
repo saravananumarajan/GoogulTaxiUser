@@ -7,7 +7,7 @@
     tools:context="com.googultaxi.taxiuser.Otp.OtpActivity">
 <ImageView
     android:id="@+id/logo"
-    android:background="@drawable/logo"
+    android:background="@drawable/logoicon"
     android:layout_width="150dp"
     android:layout_marginTop="50dp"
     android:layout_marginLeft="10dp"

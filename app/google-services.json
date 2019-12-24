@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "158076606890-umepkmmdvlt0idhu9s1bapubb6m0f9ph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.googultaxi.googultaxiuser",
+            "certificate_hash": "360746f3ef47882036c4060298bd093b8d116cd1"
+          }
+        },
+        {
           "client_id": "158076606890-rmvt0i2quldjn72d44hifmda8vlsile0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

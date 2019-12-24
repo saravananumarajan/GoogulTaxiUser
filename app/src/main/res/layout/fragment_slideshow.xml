@@ -4,6 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/nonzero"
+android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
         android:layout_margin="20dp"
         app:cardCornerRadius="10dp"
@@ -23,22 +28,29 @@
                 android:layout_width="70dp"
                 android:layout_height="40dp"/>
             <FrameLayout
-
+android:id="@+id/calllayout"
                 android:layout_alignParentRight="true"
-                android:layout_width="100dp"
-                android:layout_height="60dp">
+         android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <ImageButton
                     android:id="@+id/call"
-                    android:background="#35A853"
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"/>
-                <ImageView
-                    android:background="@drawable/call"
-                    android:layout_gravity="center"
+                    android:background="@drawable/callicon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"/>
             </FrameLayout>
+            <TextView
+                android:id="@+id/otp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/calllayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
             <TextView
                 android:id="@+id/userid"
                 android:layout_below="@+id/car"
@@ -80,10 +92,12 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:layout_height="wrap_content"/>
             <Button
                 android:id="@+id/track_driver"
                 android:text="Track driver"
+                android:visibility="gone"
                 android:textAllCaps="false"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
@@ -93,11 +107,32 @@
                 android:background="@drawable/circular_edittext"
                 android:layout_below="@+id/driver_no"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"/>
+                android:layout_height="40dp"/>
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/abc"
+            android:text="Not yet Booked"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@id/abc"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="If you need to book, Open Trip"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 </RelativeLayout>

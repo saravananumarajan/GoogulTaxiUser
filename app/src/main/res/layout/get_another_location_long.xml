@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/close"
+        android:background="@drawable/close"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <EditText
+        android:id="@+id/nearestloc"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#fff"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+
+        android:hint="Enter the nearest location"
+        android:textColor="#1A1A1A"
+        android:textColorHint="#000"
+        android:textAlignment="center"
+        android:background="@drawable/circular_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#35A853"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circular_edittext"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nearestloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

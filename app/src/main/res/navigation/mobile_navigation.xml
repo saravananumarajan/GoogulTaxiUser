@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/profile">
+    app:startDestination="@+id/trip">
 
     <fragment
         android:id="@+id/profile"
@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/trip"
-        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.bookings.GalleryFragment"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.trip.LocalTrip"
         android:label="@string/Trip"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_local_trip" />
 
     <fragment
         android:id="@+id/bookings"
-        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.slideshow.SlideshowFragment"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.Bookings.SlideshowFragment"
         android:label="@string/Bookings"
         tools:layout="@layout/fragment_slideshow" />
 
@@ -30,14 +30,14 @@
         tools:layout="@layout/fragment_tools" />
 
     <fragment
-        android:id="@+id/remarks"
-        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.share.ShareFragment"
-        android:label="@string/Remarks"
+        android:id="@+id/trackdriverfragment"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.TrackDriverFragment.ShareFragment"
+        android:label="@string/Track_driver"
         tools:layout="@layout/fragment_share" />
 
     <fragment
         android:id="@+id/about_us"
-        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.send.SendFragment"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.aboutus.SendFragment"
         android:label="@string/contact_us"
         tools:layout="@layout/fragment_send" />
     <fragment
@@ -47,7 +47,7 @@
         tools:layout="@layout/fragment_local_trip" />
     <fragment
         android:id="@+id/wait"
-        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.slideshow.WaitFragment"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.Bookings.WaitFragment"
         android:label="Wait"
         tools:layout="@layout/fragment_wait" />
     <fragment
@@ -55,5 +55,10 @@
         android:name="com.googultaxi.taxiuser.NavigationActivity.ui.trip.LongTrip"
         android:label="Longtrip"
         tools:layout="@layout/fragment_long_trip" />
+    <fragment
+        android:id="@+id/contact_us"
+        android:name="com.googultaxi.taxiuser.NavigationActivity.ui.ContactUs"
+        android:label="Contact_us"
+        tools:layout="@layout/fragment_contact_us" />
 
 </navigation>

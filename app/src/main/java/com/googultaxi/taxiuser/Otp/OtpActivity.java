@@ -111,6 +111,7 @@ String phoneNumber;
         public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
             super.onCodeSent(s, forceResendingToken);
             Log.e("codesent","codesent");
+            Toast.makeText(getApplicationContext(),"otpsent",Toast.LENGTH_LONG).show();
             verificationId = s;
         }
 

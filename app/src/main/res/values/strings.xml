@@ -13,8 +13,9 @@
     <string name="Trip">Trip</string>
     <string name="Bookings">Bookings</string>
     <string name="Track_another_trip">Track another trip</string>
-    <string name="Remarks">Remarks</string>
+    <string name="Track_driver">Tracking</string>
     <string name="contact_us">Contact us</string>
+    <string name="Remarks">Remarks</string>
     <string name="about_us">about us</string>
     <string name="local_trip">LocalTrip</string>
     <string name="title_activity_navigation_drawer">NavigationDrawer</string>
